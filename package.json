@@ -1,0 +1,25 @@
+{
+  "name": "marketing-content-engine",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "license": "UNLICENSED",
+  "description": "Vistra Marketing and Content Engine on Sanity: Functions, shared tests and the synthetic seed. Studio and hub have their own packages.",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "seed": "node scripts/generate-seed.ts",
+    "blueprints:plan": "sanity blueprints plan",
+    "blueprints:deploy": "sanity blueprints deploy"
+  },
+  "dependencies": {
+    "@sanity/client": "^8.16.0"
+  },
+  "devDependencies": {
+    "@sanity/blueprints": "^0.34.1",
+    "@types/node": "^24",
+    "groq-js": "^2.0.1",
+    "typescript": "~6.0",
+    "vitest": "^5.0.5"
+  }
+}
